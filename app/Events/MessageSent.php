@@ -20,6 +20,7 @@ class MessageSent implements ShouldBroadcast
     public $message;
 
     /**
+     * Event receives user and message Objects 
      * Create a new event instance.
      *
      * @return void
@@ -31,6 +32,7 @@ class MessageSent implements ShouldBroadcast
     }
 
     /**
+     * Defines private channel
      * Get the channels the event should broadcast on.
      *
      * @return \Illuminate\Broadcasting\Channel|array

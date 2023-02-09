@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
+/**
+ * Simple routes for single controller
+ */
 Route::controller(ChatController::class)->group(function () {
     Route::get('/', 'index');
     Route::get('/messages', 'messages');

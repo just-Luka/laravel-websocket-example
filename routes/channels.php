@@ -15,5 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
+/**
+ * Registers privChannel broadcast and 
+ */
 Broadcast::channel('privChannel', ChatChannel::class);

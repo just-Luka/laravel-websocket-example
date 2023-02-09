@@ -12,4 +12,7 @@ import './bootstrap';
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+/**
+ * ChatApp is responsible for whole frontend stuff
+ */
 import './internal/ChatApp';

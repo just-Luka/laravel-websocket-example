@@ -9,7 +9,10 @@ use Termwind\Components\Dd;
 
 class ChatController extends Controller
 {
-
+    /**
+     * Logs user by their id in range of 1 to 5
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
     public function index()
     {
         Auth()->loginUsingId(rand(1,5));
@@ -17,6 +20,10 @@ class ChatController extends Controller
         return view('welcome');
     }
 
+    /**
+     * Retrieves all messages from database [That method is not user in anywhere]
+     * @return \Illuminate\Database\Eloquent\Collection|array<\Illuminate\Database\Eloquent\Builder>
+     */
     public function messages()
     {
         return Message::query()->with('user')->get();

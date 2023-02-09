@@ -15,6 +15,10 @@ class Message extends Model
         'message'
     ];
 
+    /**
+     * Refers to the User
+     * @return BelongsTo
+     */
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
